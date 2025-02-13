@@ -1,6 +1,6 @@
+// Auth.js
 import React, { useState } from 'react';
 import { jwtDecode } from 'jwt-decode';
-import './Auth.css'; 
 
 const Auth = ({ onAuth }) => {
   const [token, setToken] = useState('');

@@ -1,5 +1,5 @@
+// Task.js
 import React from 'react';
-import './Task.css';
 
 const Task = ({ task, onToggle, onDelete }) => (
   <div>

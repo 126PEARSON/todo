@@ -1,5 +1,5 @@
+// Search.js
 import React, { useState, useEffect } from 'react';
-import './Search.css';
 
 const Search = ({ onSearch }) => {
   const [query, setQuery] = useState('');
@@ -7,7 +7,7 @@ const Search = ({ onSearch }) => {
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       onSearch(query);
-    }, 300); 
+    }, 300); // 300ms delay
     return () => clearTimeout(timeoutId);
   }, [query, onSearch]);
 

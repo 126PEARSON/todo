@@ -1,5 +1,5 @@
+// AddTask.js
 import React, { useState } from 'react';
-import './AddTask.css';
 
 const AddTask = ({ onAdd }) => {
   const [text, setText] = useState('');
@@ -7,7 +7,7 @@ const AddTask = ({ onAdd }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!text || !dueDate) return; 
+    if (!text) return;
     onAdd({ text, dueDate, completed: false });
     setText('');
     setDueDate('');
@@ -15,26 +15,8 @@ const AddTask = ({ onAdd }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor="task">Task</label>
-        <input
-          id="task"
-          value={text}
-          onChange={(e) => setText(e.target.value)}
-          placeholder="Enter task"
-          required 
-        />
-      </div>
-      <div>
-        <label htmlFor="dueDate">Due Date</label>
-        <input
-          id="dueDate"
-          type="date"
-          value={dueDate}
-          onChange={(e) => setDueDate(e.target.value)}
-          required 
-        />
-      </div>
+      <input value={text} onChange={(e) => setText(e.target.value)} placeholder="Task" />
+      <input type="date" value={dueDate} onChange={(e) => setDueDate(e.target.value)} />
       <button type="submit">Add Task</button>
     </form>
   );
