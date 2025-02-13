@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './AddTask.css';
 
 const AddTask = ({ onAdd }) => {
   const [text, setText] = useState('');
@@ -6,7 +7,7 @@ const AddTask = ({ onAdd }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!text || !dueDate) return; // Check that text and dueDate are not empty
+    if (!text || !dueDate) return; 
     onAdd({ text, dueDate, completed: false });
     setText('');
     setDueDate('');
@@ -21,7 +22,7 @@ const AddTask = ({ onAdd }) => {
           value={text}
           onChange={(e) => setText(e.target.value)}
           placeholder="Enter task"
-          required // Ensures that the input is not empty
+          required 
         />
       </div>
       <div>
@@ -31,7 +32,7 @@ const AddTask = ({ onAdd }) => {
           type="date"
           value={dueDate}
           onChange={(e) => setDueDate(e.target.value)}
-          required // Ensures that a date is selected
+          required 
         />
       </div>
       <button type="submit">Add Task</button>

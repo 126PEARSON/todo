@@ -1,0 +1,36 @@
+.task-list {
+    margin: 20px;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .task-list .task-container {
+    margin-bottom: 15px;
+  }
+  
+  .task-list .task-container:first-child {
+    margin-top: 0;
+  }
+  
+  .task-list-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-list-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .task-list-empty {
+    text-align: center;
+    font-size: 18px;
+    color: #888;
+  }
+  

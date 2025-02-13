@@ -1,0 +1,72 @@
+/* AddTask Form Styles */
+form {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  div {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type="date"] {
+    padding-left: 12px;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #0056b3;
+  }
+  
+  button {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #003d80;
+  }
+  
+  button:active {
+    background-color: #002953;
+  }
+  
+  input:disabled {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+  }
+  

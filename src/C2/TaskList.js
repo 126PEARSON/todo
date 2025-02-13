@@ -1,6 +1,6 @@
-// TaskList.js
 import React from 'react';
 import Task from './Task';
+import './TaskList.css';
 
 const TaskList = ({ tasks, onToggle, onDelete }) => (
   <div>
